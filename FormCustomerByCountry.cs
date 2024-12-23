@@ -30,7 +30,7 @@ namespace WinFormsApp1
 
             //แทรกรายการให้แสดงทั้งหมด
             DataRow row = dt.NewRow();
-            row[0] = "----- แสดงทั้งหมด -----";
+            row[0] = "----- แสดงทุกประเทศ -----";
             dt.Rows.InsertAt(row, 0);
 
             cboCountry.DataSource = dt;
@@ -43,6 +43,7 @@ namespace WinFormsApp1
         private void FormCustomerByCountry_Load(object sender, EventArgs e)
         {
             showCountry();
+            showCustomer();
         }
 
         public void showCustomer(string country)

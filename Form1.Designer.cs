@@ -36,11 +36,11 @@
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.LightCyan;
             button1.Font = new Font("Segoe UI", 24F);
-            button1.Location = new Point(325, 122);
+            button1.Location = new Point(277, 185);
             button1.Name = "button1";
-            button1.Size = new Size(324, 162);
+            button1.Size = new Size(398, 162);
             button1.TabIndex = 0;
-            button1.Text = "Connection Database";
+            button1.Text = "Connect Database";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
