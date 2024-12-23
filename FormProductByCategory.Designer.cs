@@ -56,6 +56,8 @@
             // 
             // dgvResult
             // 
+            dgvResult.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvResult.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvResult.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvResult.Location = new Point(3, 123);
             dgvResult.Name = "dgvResult";
@@ -74,6 +76,7 @@
             Controls.Add(label1);
             Name = "FormProductByCategory";
             Text = "Workshop 6 : แสดงข้อมูลสินค้าแยกตามประเภท";
+            WindowState = FormWindowState.Maximized;
             Load += FormProductByCategory_Load;
             ((System.ComponentModel.ISupportInitialize)dgvResult).EndInit();
             ResumeLayout(false);

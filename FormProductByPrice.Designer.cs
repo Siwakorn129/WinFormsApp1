@@ -69,6 +69,8 @@
             // 
             // dgvResult
             // 
+            dgvResult.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvResult.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvResult.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvResult.Location = new Point(12, 110);
             dgvResult.Name = "dgvResult";
@@ -110,6 +112,7 @@
             Controls.Add(txtStart);
             Name = "FormProductByPrice";
             Text = "Workshop 3 : ค้นหาสินค้าตามช่วงของราคา";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)dgvResult).EndInit();
             ResumeLayout(false);
             PerformLayout();

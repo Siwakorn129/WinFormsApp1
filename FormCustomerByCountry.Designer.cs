@@ -46,6 +46,8 @@
             // 
             // dgvResult
             // 
+            dgvResult.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvResult.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvResult.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvResult.Location = new Point(12, 108);
             dgvResult.Name = "dgvResult";
@@ -74,6 +76,7 @@
             Controls.Add(cboCountry);
             Name = "FormCustomerByCountry";
             Text = "WorkShop 4 : แสดงข้อมูลลูกค้าแยกตามประเทศ";
+            WindowState = FormWindowState.Maximized;
             Load += FormCustomerByCountry_Load;
             ((System.ComponentModel.ISupportInitialize)dgvResult).EndInit();
             ResumeLayout(false);

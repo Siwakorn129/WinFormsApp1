@@ -33,6 +33,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackColor = Color.LightCyan;
             button1.Font = new Font("Segoe UI", 24F);
             button1.Location = new Point(325, 122);
@@ -52,6 +53,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Connection Database";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
 

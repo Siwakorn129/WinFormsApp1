@@ -15,7 +15,8 @@ namespace WinFormsApp1
             //Application.Run(new Form1());
             //Application.Run(new FormProductByPrice());
             //Application.Run(new FormCustomerByCountry());
-            Application.Run(new FormProductByCategory());
+            //Application.Run(new FormProductByCategory());
+            Application.Run(new FrmMain());
         }
     }
 }
