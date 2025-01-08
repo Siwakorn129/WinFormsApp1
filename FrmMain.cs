@@ -44,5 +44,12 @@ namespace WinFormsApp1
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void จดการขอมลสนคาToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProductMangement frm = new FormProductMangement();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

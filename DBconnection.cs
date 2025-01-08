@@ -24,5 +24,20 @@ namespace WinFormsApp1
             conn.Open();
             return conn;
         }
+
+        public static SqlConnection connectionDBsiwa()
+        {
+            string server = "MAKHAM\\SQLEXPRESS";
+            string db = "DBsiwa";
+
+            //ประกาศตัวแปร conStr เพื่อเก็บค่า Connection String 
+            string conStr = string.Format(@"Data Source={0}; Initial catalog={1}; 
+                    Integrated Security=True; Encrypt=False;", server, db);
+
+            //ประกาศตัวแปรเพื่อเชื่อมต่อ Database
+            SqlConnection conn = new SqlConnection(conStr);
+            conn.Open();
+            return conn;
+        }
     }
 }

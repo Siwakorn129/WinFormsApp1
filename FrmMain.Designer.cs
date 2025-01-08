@@ -34,13 +34,15 @@
             workshop3ToolStripMenuItem = new ToolStripMenuItem();
             workshop4ToolStripMenuItem = new ToolStripMenuItem();
             workshop5ToolStripMenuItem = new ToolStripMenuItem();
+            จดการขอมลToolStripMenuItem = new ToolStripMenuItem();
+            จดการขอมลสนคาToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { workshopToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { workshopToolStripMenuItem, จดการขอมลToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(965, 57);
@@ -83,6 +85,21 @@
             workshop5ToolStripMenuItem.Text = "Workshop 6";
             workshop5ToolStripMenuItem.Click += workshop5ToolStripMenuItem_Click;
             // 
+            // จดการขอมลToolStripMenuItem
+            // 
+            จดการขอมลToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { จดการขอมลสนคาToolStripMenuItem });
+            จดการขอมลToolStripMenuItem.Font = new Font("TH Sarabun New", 22.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            จดการขอมลToolStripMenuItem.Name = "จดการขอมลToolStripMenuItem";
+            จดการขอมลToolStripMenuItem.Size = new Size(165, 53);
+            จดการขอมลToolStripMenuItem.Text = "จัดการข้อมูล";
+            // 
+            // จดการขอมลสนคาToolStripMenuItem
+            // 
+            จดการขอมลสนคาToolStripMenuItem.Name = "จดการขอมลสนคาToolStripMenuItem";
+            จดการขอมลสนคาToolStripMenuItem.Size = new Size(305, 54);
+            จดการขอมลสนคาToolStripMenuItem.Text = "จัดการข้อมูลสินค้า";
+            จดการขอมลสนคาToolStripMenuItem.Click += จดการขอมลสนคาToolStripMenuItem_Click;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -109,5 +126,7 @@
         private ToolStripMenuItem workshop3ToolStripMenuItem;
         private ToolStripMenuItem workshop4ToolStripMenuItem;
         private ToolStripMenuItem workshop5ToolStripMenuItem;
+        private ToolStripMenuItem จดการขอมลToolStripMenuItem;
+        private ToolStripMenuItem จดการขอมลสนคาToolStripMenuItem;
     }
 }
