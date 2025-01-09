@@ -51,5 +51,19 @@ namespace WinFormsApp1
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void form5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5OrderDetail frm = new Form5OrderDetail();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void form6SearchEmployeeSaleDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6SearchEmployeeSaleData frm = new Form6SearchEmployeeSaleData();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
