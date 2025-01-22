@@ -58,15 +58,20 @@
             // 
             // dgvOrder
             // 
+            dgvOrder.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dgvOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvOrder.Location = new Point(38, 72);
             dgvOrder.Name = "dgvOrder";
             dgvOrder.RowHeadersWidth = 51;
             dgvOrder.Size = new Size(1328, 450);
             dgvOrder.TabIndex = 2;
+            dgvOrder.CellMouseClick += dgvOrder_CellMouseClick;
             // 
             // dgvDetail
             // 
+            dgvDetail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvDetail.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvDetail.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDetail.Location = new Point(38, 587);
             dgvDetail.Name = "dgvDetail";
@@ -78,6 +83,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(1413, 867);
             Controls.Add(dgvDetail);
             Controls.Add(dgvOrder);
@@ -85,6 +91,8 @@
             Controls.Add(label1);
             Name = "Form5OrderDetail";
             Text = "ข้อมูลใบสั่งซื้อ";
+            WindowState = FormWindowState.Maximized;
+            Load += Form5OrderDetail_Load;
             ((System.ComponentModel.ISupportInitialize)dgvOrder).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvDetail).EndInit();
             ResumeLayout(false);

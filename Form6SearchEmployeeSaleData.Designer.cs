@@ -83,7 +83,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("TH Sarabun New", 19.7999973F, FontStyle.Bold);
-            label3.Location = new Point(35, 107);
+            label3.Location = new Point(35, 95);
             label3.Name = "label3";
             label3.Size = new Size(95, 44);
             label3.TabIndex = 4;
@@ -91,29 +91,33 @@
             // 
             // btnShow
             // 
-            btnShow.BackColor = Color.LightCyan;
+            btnShow.BackColor = Color.Lime;
             btnShow.Font = new Font("TH Sarabun New", 19.7999973F, FontStyle.Bold);
             btnShow.Location = new Point(1305, 23);
             btnShow.Name = "btnShow";
-            btnShow.Size = new Size(222, 93);
+            btnShow.Size = new Size(201, 78);
             btnShow.TabIndex = 5;
             btnShow.Text = "แสดงข้อมูล";
             btnShow.UseVisualStyleBackColor = false;
+            btnShow.Click += btnShow_Click;
             // 
             // dgvOrder
             // 
+            dgvOrder.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dgvOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOrder.Location = new Point(35, 154);
+            dgvOrder.Location = new Point(35, 142);
             dgvOrder.Name = "dgvOrder";
             dgvOrder.RowHeadersWidth = 51;
-            dgvOrder.Size = new Size(1492, 397);
+            dgvOrder.Size = new Size(1492, 378);
             dgvOrder.TabIndex = 6;
+            dgvOrder.CellMouseClick += dgvOrder_CellMouseClick;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("TH Sarabun New", 19.7999973F, FontStyle.Bold);
-            label4.Location = new Point(35, 582);
+            label4.Location = new Point(35, 538);
             label4.Name = "label4";
             label4.Size = new Size(143, 44);
             label4.TabIndex = 7;
@@ -121,19 +125,22 @@
             // 
             // dgvDetail
             // 
+            dgvDetail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvDetail.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvDetail.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDetail.Location = new Point(35, 629);
+            dgvDetail.Location = new Point(35, 585);
             dgvDetail.Name = "dgvDetail";
             dgvDetail.RowHeadersWidth = 51;
-            dgvDetail.Size = new Size(1492, 325);
+            dgvDetail.Size = new Size(1492, 258);
             dgvDetail.TabIndex = 8;
+            dgvDetail.CellMouseClick += dgvDetail_CellMouseClick;
             // 
             // Form6SearchEmployeeSaleData
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1549, 966);
+            ClientSize = new Size(1549, 855);
             Controls.Add(dgvDetail);
             Controls.Add(label4);
             Controls.Add(dgvOrder);
@@ -145,6 +152,8 @@
             Controls.Add(label1);
             Name = "Form6SearchEmployeeSaleData";
             Text = "ค้นหาข้อมูลการขายของพนักงาน";
+            WindowState = FormWindowState.Maximized;
+            Load += Form6SearchEmployeeSaleData_Load;
             ((System.ComponentModel.ISupportInitialize)dgvOrder).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvDetail).EndInit();
             ResumeLayout(false);
