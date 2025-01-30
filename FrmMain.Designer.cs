@@ -41,13 +41,15 @@
             จดการขอมลสนคาToolStripMenuItem = new ToolStripMenuItem();
             workShopViewToolStripMenuItem = new ToolStripMenuItem();
             fromOrderCountryYearToolStripMenuItem = new ToolStripMenuItem();
+            workshopStoreProcedureToolStripMenuItem = new ToolStripMenuItem();
+            insertProductToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { workshopToolStripMenuItem, จดการขอมลToolStripMenuItem, workShopViewToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { workshopToolStripMenuItem, จดการขอมลToolStripMenuItem, workShopViewToolStripMenuItem, workshopStoreProcedureToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(965, 57);
@@ -136,9 +138,24 @@
             // fromOrderCountryYearToolStripMenuItem
             // 
             fromOrderCountryYearToolStripMenuItem.Name = "fromOrderCountryYearToolStripMenuItem";
-            fromOrderCountryYearToolStripMenuItem.Size = new Size(388, 48);
+            fromOrderCountryYearToolStripMenuItem.Size = new Size(427, 54);
             fromOrderCountryYearToolStripMenuItem.Text = "From_Order_Country-Year";
             fromOrderCountryYearToolStripMenuItem.Click += fromOrderCountryYearToolStripMenuItem_Click;
+            // 
+            // workshopStoreProcedureToolStripMenuItem
+            // 
+            workshopStoreProcedureToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { insertProductToolStripMenuItem });
+            workshopStoreProcedureToolStripMenuItem.Font = new Font("TH Sarabun New", 22.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            workshopStoreProcedureToolStripMenuItem.Name = "workshopStoreProcedureToolStripMenuItem";
+            workshopStoreProcedureToolStripMenuItem.Size = new Size(350, 53);
+            workshopStoreProcedureToolStripMenuItem.Text = "Workshop Store Procedure";
+            // 
+            // insertProductToolStripMenuItem
+            // 
+            insertProductToolStripMenuItem.Name = "insertProductToolStripMenuItem";
+            insertProductToolStripMenuItem.Size = new Size(284, 54);
+            insertProductToolStripMenuItem.Text = "Insert Product";
+            insertProductToolStripMenuItem.Click += insertProductToolStripMenuItem_Click;
             // 
             // FrmMain
             // 
@@ -173,5 +190,7 @@
         private ToolStripMenuItem formToolStripMenuItem;
         private ToolStripMenuItem workShopViewToolStripMenuItem;
         private ToolStripMenuItem fromOrderCountryYearToolStripMenuItem;
+        private ToolStripMenuItem workshopStoreProcedureToolStripMenuItem;
+        private ToolStripMenuItem insertProductToolStripMenuItem;
     }
 }
