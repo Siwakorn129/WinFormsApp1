@@ -35,16 +35,19 @@
             workshop4ToolStripMenuItem = new ToolStripMenuItem();
             workshop5ToolStripMenuItem = new ToolStripMenuItem();
             form5ToolStripMenuItem = new ToolStripMenuItem();
+            form6SearchEmployeeSaleDataToolStripMenuItem = new ToolStripMenuItem();
+            formToolStripMenuItem = new ToolStripMenuItem();
             จดการขอมลToolStripMenuItem = new ToolStripMenuItem();
             จดการขอมลสนคาToolStripMenuItem = new ToolStripMenuItem();
-            form6SearchEmployeeSaleDataToolStripMenuItem = new ToolStripMenuItem();
+            workShopViewToolStripMenuItem = new ToolStripMenuItem();
+            fromOrderCountryYearToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { workshopToolStripMenuItem, จดการขอมลToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { workshopToolStripMenuItem, จดการขอมลToolStripMenuItem, workShopViewToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(965, 57);
@@ -53,7 +56,7 @@
             // 
             // workshopToolStripMenuItem
             // 
-            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop12ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem, workshop5ToolStripMenuItem, form5ToolStripMenuItem, form6SearchEmployeeSaleDataToolStripMenuItem });
+            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop12ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem, workshop5ToolStripMenuItem, form5ToolStripMenuItem, form6SearchEmployeeSaleDataToolStripMenuItem, formToolStripMenuItem });
             workshopToolStripMenuItem.Font = new Font("TH Sarabun New", 22.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             workshopToolStripMenuItem.Name = "workshopToolStripMenuItem";
             workshopToolStripMenuItem.Size = new Size(153, 53);
@@ -94,6 +97,19 @@
             form5ToolStripMenuItem.Text = "Form 5 Order Detail";
             form5ToolStripMenuItem.Click += form5ToolStripMenuItem_Click;
             // 
+            // form6SearchEmployeeSaleDataToolStripMenuItem
+            // 
+            form6SearchEmployeeSaleDataToolStripMenuItem.Name = "form6SearchEmployeeSaleDataToolStripMenuItem";
+            form6SearchEmployeeSaleDataToolStripMenuItem.Size = new Size(534, 54);
+            form6SearchEmployeeSaleDataToolStripMenuItem.Text = "Form 6 Search Employee Sale Data";
+            form6SearchEmployeeSaleDataToolStripMenuItem.Click += form6SearchEmployeeSaleDataToolStripMenuItem_Click;
+            // 
+            // formToolStripMenuItem
+            // 
+            formToolStripMenuItem.Name = "formToolStripMenuItem";
+            formToolStripMenuItem.Size = new Size(534, 54);
+            formToolStripMenuItem.Text = "Form ";
+            // 
             // จดการขอมลToolStripMenuItem
             // 
             จดการขอมลToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { จดการขอมลสนคาToolStripMenuItem });
@@ -109,12 +125,20 @@
             จดการขอมลสนคาToolStripMenuItem.Text = "จัดการข้อมูลสินค้า";
             จดการขอมลสนคาToolStripMenuItem.Click += จดการขอมลสนคาToolStripMenuItem_Click;
             // 
-            // form6SearchEmployeeSaleDataToolStripMenuItem
+            // workShopViewToolStripMenuItem
             // 
-            form6SearchEmployeeSaleDataToolStripMenuItem.Name = "form6SearchEmployeeSaleDataToolStripMenuItem";
-            form6SearchEmployeeSaleDataToolStripMenuItem.Size = new Size(534, 54);
-            form6SearchEmployeeSaleDataToolStripMenuItem.Text = "Form 6 Search Employee Sale Data";
-            form6SearchEmployeeSaleDataToolStripMenuItem.Click += form6SearchEmployeeSaleDataToolStripMenuItem_Click;
+            workShopViewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fromOrderCountryYearToolStripMenuItem });
+            workShopViewToolStripMenuItem.Font = new Font("TH Sarabun New", 22.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            workShopViewToolStripMenuItem.Name = "workShopViewToolStripMenuItem";
+            workShopViewToolStripMenuItem.Size = new Size(210, 53);
+            workShopViewToolStripMenuItem.Text = "WorkShopView";
+            // 
+            // fromOrderCountryYearToolStripMenuItem
+            // 
+            fromOrderCountryYearToolStripMenuItem.Name = "fromOrderCountryYearToolStripMenuItem";
+            fromOrderCountryYearToolStripMenuItem.Size = new Size(388, 48);
+            fromOrderCountryYearToolStripMenuItem.Text = "From_Order_Country-Year";
+            fromOrderCountryYearToolStripMenuItem.Click += fromOrderCountryYearToolStripMenuItem_Click;
             // 
             // FrmMain
             // 
@@ -146,5 +170,8 @@
         private ToolStripMenuItem จดการขอมลสนคาToolStripMenuItem;
         private ToolStripMenuItem form5ToolStripMenuItem;
         private ToolStripMenuItem form6SearchEmployeeSaleDataToolStripMenuItem;
+        private ToolStripMenuItem formToolStripMenuItem;
+        private ToolStripMenuItem workShopViewToolStripMenuItem;
+        private ToolStripMenuItem fromOrderCountryYearToolStripMenuItem;
     }
 }

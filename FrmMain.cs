@@ -65,5 +65,12 @@ namespace WinFormsApp1
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void fromOrderCountryYearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOrder_Counrty_Year frm = new FrmOrder_Counrty_Year();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
