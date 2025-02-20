@@ -43,6 +43,7 @@
             fromOrderCountryYearToolStripMenuItem = new ToolStripMenuItem();
             workshopStoreProcedureToolStripMenuItem = new ToolStripMenuItem();
             insertProductToolStripMenuItem = new ToolStripMenuItem();
+            formAddUserToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -144,7 +145,7 @@
             // 
             // workshopStoreProcedureToolStripMenuItem
             // 
-            workshopStoreProcedureToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { insertProductToolStripMenuItem });
+            workshopStoreProcedureToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { insertProductToolStripMenuItem, formAddUserToolStripMenuItem });
             workshopStoreProcedureToolStripMenuItem.Font = new Font("TH Sarabun New", 22.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
             workshopStoreProcedureToolStripMenuItem.Name = "workshopStoreProcedureToolStripMenuItem";
             workshopStoreProcedureToolStripMenuItem.Size = new Size(350, 53);
@@ -153,9 +154,16 @@
             // insertProductToolStripMenuItem
             // 
             insertProductToolStripMenuItem.Name = "insertProductToolStripMenuItem";
-            insertProductToolStripMenuItem.Size = new Size(284, 54);
+            insertProductToolStripMenuItem.Size = new Size(296, 54);
             insertProductToolStripMenuItem.Text = "Insert Product";
             insertProductToolStripMenuItem.Click += insertProductToolStripMenuItem_Click;
+            // 
+            // formAddUserToolStripMenuItem
+            // 
+            formAddUserToolStripMenuItem.Name = "formAddUserToolStripMenuItem";
+            formAddUserToolStripMenuItem.Size = new Size(296, 54);
+            formAddUserToolStripMenuItem.Text = "Form Add User";
+            formAddUserToolStripMenuItem.Click += formAddUserToolStripMenuItem_Click;
             // 
             // FrmMain
             // 
@@ -192,5 +200,6 @@
         private ToolStripMenuItem fromOrderCountryYearToolStripMenuItem;
         private ToolStripMenuItem workshopStoreProcedureToolStripMenuItem;
         private ToolStripMenuItem insertProductToolStripMenuItem;
+        private ToolStripMenuItem formAddUserToolStripMenuItem;
     }
 }

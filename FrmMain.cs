@@ -79,5 +79,12 @@ namespace WinFormsApp1
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void formAddUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAddUser frm = new FrmAddUser();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
